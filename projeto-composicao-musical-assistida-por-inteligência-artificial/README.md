@@ -19,11 +19,11 @@ O assistente (Gems) utilizado para modelagem das letras pode ser acessado atrav�
 ## 🎧 Músicas Geradas
 | Faixa | Título | Estilo/Referência | Link do Áudio |
 | :--- | :--- | :--- | :--- |
-| 01 | Batom e Pesadelo | Rock Alternativo | [🎵 Ouvir](audio/Batom%20e%20Pesadelos.mp3) |
-| 02 | Juliet na Janela | Rock Alternativo | [🎵 Ouvir](audio/Juliet%20na%20Janela.mp3) |
-| 03 | Linhas de Frente do Fim | Rock Alternativo | [🎵 Ouvir](audio/Linhas%20de%20Frente%20do%20Fim.mp3) |
-| 04 | Luz da cidade pela manhã | Rock Alternativo | [🎵 Ouvir](audio/Luz%20da%20cidade%20pela%20manh%C3%A3.mp3) |
-| 05 | Roleta Russa | Rock Alternativo | [🎵 Ouvir](audio/Roleta%20Russa.mp3) |
+| 01 | Batom e Pesadelo | Rock Alternativo | [🎵 Download](https://raw.githubusercontent.com/ChrystiannSangiorgi/portfolio-chrystiann-caesar-sangiorgi-de-oliveira/main/projeto-composicao-musical-assistida-por-intelig%C3%AAncia-artificial/audio/Batom%20e%20Pesadelos.mp3) |
+| 02 | Juliet na Janela | Rock Alternativo | [🎵 Download](https://raw.githubusercontent.com/ChrystiannSangiorgi/portfolio-chrystiann-caesar-sangiorgi-de-oliveira/main/projeto-composicao-musical-assistida-por-intelig%C3%AAncia-artificial/audio/Juliet%20na%20Janela.mp3) |
+| 03 | Linhas de Frente do Fim | Rock Alternativo | [🎵 Download](https://raw.githubusercontent.com/ChrystiannSangiorgi/portfolio-chrystiann-caesar-sangiorgi-de-oliveira/main/projeto-composicao-musical-assistida-por-intelig%C3%AAncia-artificial/audio/Linhas%20de%20Frente%20do%20Fim.mp3) |
+| 04 | Luz da cidade pela manhã | Rock Alternativo | [🎵 Download](https://raw.githubusercontent.com/ChrystiannSangiorgi/portfolio-chrystiann-caesar-sangiorgi-de-oliveira/main/projeto-composicao-musical-assistida-por-intelig%C3%AAncia-artificial/audio/Luz%20da%20cidade%20pela%20manh%C3%A3.mp3) |
+| 05 | Roleta Russa | Rock Alternativo | [🎵 Download](https://raw.githubusercontent.com/ChrystiannSangiorgi/portfolio-chrystiann-caesar-sangiorgi-de-oliveira/main/projeto-composicao-musical-assistida-por-intelig%C3%AAncia-artificial/audio/Roleta%20Russa.mp3) |S
 
 ## 📄 Processo de Criação
 1. **Curadoria:** Seleção de 10 letras do artista base.
