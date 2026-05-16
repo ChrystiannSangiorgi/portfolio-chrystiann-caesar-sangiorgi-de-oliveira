@@ -1,0 +1,251 @@
+/* ============================================================
+   PERTINHO — Design System "Calor Familiar"
+   Paleta: Creme quente, Verde musgo, Vermelho terracota, Laranja mel
+   Tipografia: Nunito (arredondada, acolhedora)
+   Princípio: Hierarquia radical, escala generosa, zero distrações
+   ============================================================ */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Pertinho custom tokens */
+  --color-pertinho-cream: #FBF7F0;
+  --color-pertinho-green: #3B7A57;
+  --color-pertinho-green-dark: #2d5e42;
+  --color-pertinho-red: #C7423B;
+  --color-pertinho-red-dark: #a3342e;
+  --color-pertinho-orange: #E08D3C;
+  --color-pertinho-text: #2B2B2B;
+  --color-pertinho-text-secondary: #6B6B6B;
+}
+
+:root {
+  --radius: 1rem;
+  --background: #FBF7F0;
+  --foreground: #2B2B2B;
+  --card: #FFFFFF;
+  --card-foreground: #2B2B2B;
+  --popover: #FFFFFF;
+  --popover-foreground: #2B2B2B;
+  --primary: #3B7A57;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F3EDE3;
+  --secondary-foreground: #2B2B2B;
+  --muted: #F3EDE3;
+  --muted-foreground: #6B6B6B;
+  --accent: #E08D3C;
+  --accent-foreground: #FFFFFF;
+  --destructive: #C7423B;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8E0D4;
+  --input: #E8E0D4;
+  --ring: #3B7A57;
+  --chart-1: #3B7A57;
+  --chart-2: #E08D3C;
+  --chart-3: #C7423B;
+  --chart-4: #6B6B6B;
+  --chart-5: #2B2B2B;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #2B2B2B;
+  --sidebar-primary: #3B7A57;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F3EDE3;
+  --sidebar-accent-foreground: #2B2B2B;
+  --sidebar-border: #E8E0D4;
+  --sidebar-ring: #3B7A57;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Pertinho button styles */
+  .btn-call {
+    background-color: #3B7A57;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    height: 4rem;
+    width: 100%;
+    border: none;
+    transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(59, 122, 87, 0.3);
+  }
+  .btn-call:active {
+    transform: scale(0.97);
+    background-color: #2d5e42;
+  }
+  .btn-call:hover {
+    background-color: #2d5e42;
+  }
+
+  .btn-hangup {
+    background-color: #C7423B;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    height: 4rem;
+    width: 100%;
+    border: none;
+    transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(199, 66, 59, 0.3);
+  }
+  .btn-hangup:active {
+    transform: scale(0.97);
+    background-color: #a3342e;
+  }
+  .btn-hangup:hover {
+    background-color: #a3342e;
+  }
+
+  /* Pertinho card */
+  .contact-card {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 200ms ease;
+  }
+  .contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Screen fade-in */
+  .screen-enter {
+    animation: screenFadeIn 200ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  }
+  @keyframes screenFadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* Pulse animation for call button */
+  @keyframes callPulse {
+    0%, 100% { box-shadow: 0 4px 12px rgba(59, 122, 87, 0.3); }
+    50% { box-shadow: 0 4px 24px rgba(59, 122, 87, 0.6); }
+  }
+  .btn-call-pulse {
+    animation: callPulse 2s ease-in-out infinite;
+  }
+
+  /* Incoming call pulse */
+  @keyframes incomingPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(59, 122, 87, 0.4); }
+    50% { box-shadow: 0 0 0 20px rgba(59, 122, 87, 0); }
+  }
+  .incoming-pulse {
+    animation: incomingPulse 1.5s ease-in-out infinite;
+  }
+
+  /* Long press progress */
+  @keyframes longPressProgress {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+}

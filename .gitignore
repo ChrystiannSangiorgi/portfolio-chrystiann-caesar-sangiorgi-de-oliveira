@@ -1,0 +1,8 @@
+﻿# Credenciais e configs sensíveis
+.project-config.json
+*.env
+.env.local
+.env.production
+node_modules/
+dist/
+build/
